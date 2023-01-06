@@ -3,7 +3,7 @@ const xhr = new XMLHttpRequest();
 let source = 'bbc-news';
 let apiKey = '0c4a1a7a7dba4650a2056b814b6fe9a1'
 
-xhr.open('GET',`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=0c4a1a7a7dba4650a2056b814b6fe9a1`,true)
+xhr.open('GET',`http://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=0c4a1a7a7dba4650a2056b814b6fe9a1`,true)
 
 let allnews = "";
 let thisnews = "";
