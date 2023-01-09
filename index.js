@@ -9,16 +9,13 @@ let allnews = "";
 let thisnews = "";
 let spinner = document.getElementById("spinner")
 
-xhr.onprogress = function (){
-  console.log("searching")
-  console.log(spinner)
-}
+// xhr.onprogress = function (){
+// }
 xhr.onload = function (){
   spinner.classList.toggle("display")
     if(this.status === 200) {
         let json = JSON.parse(this.responseText);
         let articles = json.articles;
-        console.log(articles)
         articles.forEach(element => {
             thisnews = `<div class="card d-inline-block mx-5 my-3" style="width: 18rem;">
             <img src="${element.urlToImage}" class="card-img-top" alt="...">
